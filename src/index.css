@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@utility allignment {
+  @apply py-24 px-26
+}
+
+@utility center{
+  @apply flex justify-center items-center
+}
+
+@utility background {
+  @apply bg-[#101322];
+}
+
+@utility primary-font-color{
+  @apply text-[#fefefe]
+}
+
+@utility secondary-font-color{
+  @apply text-[#bebdbd]
+}
+
+@utility tertiary-font-color{
+  @apply text-[#c1bfbf]
+}
+
+
