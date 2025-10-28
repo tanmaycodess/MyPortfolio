@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SideBarSection } from '../constant';
+import { JobExperience, ProjectsDone, SideBarSection } from '../constant';
 
 const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -66,7 +66,14 @@ useEffect(() => {
         ></span>
   
         {/* The label */}
-        {item.name}
+        
+        {
+        item.name === 'Experience' ? 
+          `${item.name} (${JobExperience.length})` 
+          : item.name === 'Projects' ? 
+            `${item.name} (${(ProjectsDone.length)})` 
+          : item.name
+        }
       </button>
     ))}
   </div>
